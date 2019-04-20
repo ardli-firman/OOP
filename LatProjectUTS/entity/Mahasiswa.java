@@ -42,20 +42,9 @@ public class Mahasiswa {
         this.kelas = kelas;
     }
 
-    public Mahasiswa nim(String nim) {
-        this.nim = nim;
-        return this;
+    @Override
+    public boolean indexOf(Object o) {
+        Mahasiswa mahasiswa = (Mahasiswa) o;
+        return Objects.equals(nim, mahasiswa.getNim());
     }
-
-    public Mahasiswa nama(String nama) {
-        this.nama = nama;
-        return this;
-    }
-
-    public Mahasiswa kelas(String kelas) {
-        this.kelas = kelas;
-        return this;
-    }
-
 }
-                    

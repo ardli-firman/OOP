@@ -16,6 +16,15 @@ public class ServiceMahasiswa {
         System.out.println(" Data telah disimpan");
     }
 
+    public void ubahData(Mahasiswa mhs) {
+        int res = data.indexOf(mhs);
+        if (res >= 0) {
+            data.set(res, mhs);
+            System.out.println("Data telah berubah");
+        }
+
+    }
+
     public void cetakData() {
         System.out.println("=== Print data === ");
         int i = 1;
